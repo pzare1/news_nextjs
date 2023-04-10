@@ -7,7 +7,7 @@ type Props =  {
 function Navlink({category,isActive}: Props) {
   return (
     <>
-        <Link className='navlink' href={`/news/${category}`}>{category}</Link>
+        <Link className={`navlink ${isActive && 'underline decoration-orange-400 underline-offset-4 font-bold text-lg'}`} href={`/news/${category}`}>{category}</Link>
     </>
   )
 }

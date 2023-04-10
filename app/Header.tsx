@@ -2,6 +2,7 @@ import Link from 'next/link';
 import React from 'react'
 import { RxHamburgerMenu } from 'react-icons/rx';
 import Navbar from './Navbar';
+import Searchbox from './Searchbox';
 function Header() {
   return (
     <header>
@@ -19,6 +20,7 @@ function Header() {
         </div>
     </div>
     <Navbar/>
+    <Searchbox/>
     </header>
   )
 }
